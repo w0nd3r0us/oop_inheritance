@@ -6,7 +6,7 @@ require 'json'
 # around the world and can cobble together a sentence in most of them (but not very well)
 class Multilinguist
 
-  TRANSLTR_BASE_URL = "http://www.transltr.org/api/translate"
+  TRANSLTR_BASE_URL = "http://bitmakertranslate.herokuapp.com"
   COUNTRIES_BASE_URL = "https://restcountries.eu/rest/v2/name"
   #{name}?fullText=true
   #?text=The%20total%20is%2020485&to=ja&from=en
@@ -52,4 +52,3 @@ class Multilinguist
     json_response['translationText']
   end
 end
-
